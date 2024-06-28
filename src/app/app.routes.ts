@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './componentes/inicio/inicio.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { InformacionComponent } from './componentes/informacion/informacion.component';
-import { QrComponent } from './qr/qr.component';
+import { QrComponent } from './componentes/qr/qr.component';
 
 // Define las rutas de la aplicación
 export const routes: Routes = [
