@@ -5,7 +5,7 @@ import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { InformacionComponent } from './componentes/informacion/informacion.component';
 import { QrComponent } from './componentes/qr/qr.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: '', component: InicioComponent },        // Ruta por defecto
   { path: 'contacto', component: ContactoComponent },
   { path: 'informacion', component: InformacionComponent },
