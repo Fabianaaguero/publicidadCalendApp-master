@@ -1,0 +1,122 @@
+.container {
+  padding-top: 50px;
+
+}
+
+.info-section a {
+  display: flex;
+  justify-content: center; 
+  width: 100%; 
+}
+
+.info-section div {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.intro-section a img {
+  width: 250px; 
+}
+
+.cta-section a img{
+  width: 120px;
+  margin-top: 20px;
+}
+
+
+h1 {
+  font-size: 24px;
+  margin-top: 0;
+  text-align: center;
+  padding-top: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.info-section {
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bton-section {
+  background-color: white;
+}
+
+.ntif-section a img{
+  width: 100px;
+  margin-top: 20px;
+}
+
+.btn-primary {
+margin: auto;  font-size: 18px;
+  max-width: 15em;
+  padding: 10px 0px;
+border-radius: 5px;
+  background-color: #41aeb4;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+
+
+  
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+
+
+
+
+
+/* Flexbox layout for larger screens */
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    height: 100%;
+
+  }
+  
+  .info-sections {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .info-section {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .bton-section {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .cta-section a img{
+    width: 180px;
+    margin-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  
+.ntif-section a img{
+  width: 150px;
+  margin-top: 50px;
+  padding-bottom: 20px;
+
+}
+}
+
+

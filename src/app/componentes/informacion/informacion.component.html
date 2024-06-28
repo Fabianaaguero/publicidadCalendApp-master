@@ -1,0 +1,43 @@
+<div id="container">
+  <div class="info-sections">
+    <div class="info-section intro-section">
+      <a><img src="../../../assets/agendarreunion.png" alt="agenda"></a>
+      <h1>¡Simplifique la gestión de las reuniones con sus clientes!</h1>
+      <p>Descubre nuestra aplicación diseñada para ayudarte a organizar turnos, gestionar pacientes y optimizar tu tiempo.</p>
+    </div>
+
+    <div class="info-section features-section">
+      <a><img src="../../../assets/caracteristicas.png" alt="agenda"></a>
+      <h3>Características</h3>
+      <ul>
+        <li>Agenda de reuniones eficiente</li>
+        <li>Gestión centralizada de clientes</li>
+        <li>Recordatorios automatizados de citas</li>
+        <li>Acceso móvil desde cualquier dispositivo</li>
+        <li>Seguridad y confidencialidad de datos</li>
+      </ul>
+    </div>
+
+    <div class="info-section benefits-section">
+      <a><img src="../../../assets/beneficios.png" alt="agenda"></a>
+      <h3>Beneficios</h3>
+      <ul>
+        <li>Ahorro de tiempo en la gestión diaria</li>
+        <li>Organización óptima de turnos y reuniones</li>
+        <li>Comunicación efectiva con clientes</li>
+        <li>Acceso remoto a la información</li>
+        <li>Mayor productividad y eficiencia</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="info-section testimonios-section">
+    <h1>Testimonios de usuarios</h1>
+    <div class="carousel">
+      <blockquote *ngFor="let testimonial of testimonials; let i = index" [class.active]="i === currentTestimonial">
+        "{{testimonial.text}}"
+        <footer>- {{testimonial.author}}</footer>
+      </blockquote>
+    </div>
+  </div>
+</div>

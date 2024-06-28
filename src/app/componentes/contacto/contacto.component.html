@@ -1,0 +1,31 @@
+<form id="contactFormContainer" [formGroup]="contactoForm" (ngSubmit)="submitForm()">
+    <div class="form-group">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" formControlName="nombre" class="form-control">
+      <div *ngIf="contactoForm.get('nombre')!.invalid && (contactoForm.get('nombre')!.dirty || contactoForm.get('nombre')!.touched)" class="alert alert-danger">
+        Debe ingresar un nombre.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" formControlName="email" class="form-control">
+      <div *ngIf="contactoForm.get('email')!.invalid && (contactoForm.get('email')!.dirty || contactoForm.get('email')!.touched)" class="alert alert-danger">
+        Debe ingresar un mail válido.
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" formControlName="mensaje" class="form-control" rows="4"></textarea>
+      <div *ngIf="contactoForm.get('mensaje')!.invalid && (contactoForm.get('mensaje')!.dirty || contactoForm.get('mensaje')!.touched)" class="alert alert-danger">
+        Debe ingresar un mensaje.
+      </div>
+    </div>
+    <div class="btn-container">
+    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+    </div>
+  </form>
+  
+  <div *ngIf="mensajeEnviado" class="alert alert-success mt-3" role="alert">
+    ¡Mensaje enviado correctamente! Gracias por contactarnos.
+  </div>
+  
